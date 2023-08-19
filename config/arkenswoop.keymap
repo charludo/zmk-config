@@ -5,10 +5,9 @@
  */
 
 #include <behaviors.dtsi>
-#include <dt-bindings/zmk/keys.h>
-
 #include "mouse.dtsi"
 #include "combo.dtsi"
+#include <dt-bindings/zmk/keys.h>
 
 / {
     behaviors {
@@ -20,7 +19,6 @@
                 <&kp LEFT_SHIFT>,
                 <&caps_word>;
         };
-
         num_word: behavior_num_word {
             compatible = "zmk,behavior-caps-word";
             label = "NUM_WORD";
@@ -28,6 +26,20 @@
             layers = <2>;
             continue-list = <BACKSPACE DELETE DOT COMMA ASTERISK LEFT_PAENTHESIS RIGHT_PARENTHESIS PLUS MINUS SLASH PERCENT UNDERSCORE COLON LEFT RIGHT>;
             ignore-numbers;
+        };
+    };
+
+    combos {
+        compatible = "zmk,combos";
+
+        new_combo {
+            bindings = <&trans>;
+            key-positions = <0 24>;
+        };
+
+        new_combo {
+            bindings = <&trans>;
+            key-positions = <>;
         };
     };
 
