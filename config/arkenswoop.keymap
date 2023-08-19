@@ -68,6 +68,41 @@
 
     combos {
         compatible = "zmk,combos";
+
+        combo_a {
+            bindings = <&umlaut_a>;
+            key-positions = <13 12>;
+        };
+
+        combo_A {
+            bindings = <&umlaut_A>;
+            key-positions = <13 12 33>;
+        };
+
+        combo_o {
+            bindings = <&umlaut_o>;
+            key-positions = <13 14>;
+        };
+
+        combo_O {
+            bindings = <&umlaut_O>;
+            key-positions = <13 14 33>;
+        };
+
+        combo_u {
+            bindings = <&umlaut_u>;
+            key-positions = <13 10>;
+        };
+
+        combo_U {
+            bindings = <&umlaut_U>;
+            key-positions = <13 10 33>;
+        };
+
+        combo_s {
+            bindings = <&umlaut_s>;
+            key-positions = <13 15>;
+        };
     };
 
     macros {
