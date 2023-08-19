@@ -146,7 +146,7 @@
         };
 
         combo_as {
-            bindings = <&umlaut_A>;
+            bindings = <&umlaut_as>;
             key-positions = <13 12 33>;
             layers = <0>;
         };
@@ -158,7 +158,7 @@
         };
 
         combo_os {
-            bindings = <&umlaut_O>;
+            bindings = <&umlaut_os>;
             key-positions = <13 14 33>;
             layers = <0>;
         };
@@ -170,7 +170,7 @@
         };
 
         combo_us {
-            bindings = <&umlaut_U>;
+            bindings = <&umlaut_us>;
             key-positions = <13 10 33>;
             layers = <0>;
         };
