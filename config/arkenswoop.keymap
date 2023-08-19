@@ -364,7 +364,9 @@
                   &trans  &num_activate 1 0  &nav_activate 3 SPACE  &shift_activate LSHIFT 0  &symbol_activate 2 0  &trans
             >;
 
-            sensor-bindings = <&inc_dec_mwh SCROLL_DOWN SCROLL_UP &inc_dec_kp LS(LC(R)) U>;
+            sensor-bindings =
+                <&inc_dec_kp DOWN_ARROW UP_ARROW>,
+                <&inc_dec_kp RIGHT LEFT>;
         };
 
         numbers {
