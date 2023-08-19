@@ -16,7 +16,7 @@
             label = "NUM_WORD";
             #binding-cells = <0>;
             layers = <2>;
-            continue-list = <BACKSPACE DELETE DOT COMMA ASTERISK LEFT_PAENTHESIS RIGHT_PARENTHESIS PLUS MINUS SLASH PERCENT UNDERSCORE COLON LEFT RIGHT>;
+            continue-list = <BACKSPACE DELETE DOT COMMA>;
             ignore-numbers;
         };
         num_activate: num_activate {
