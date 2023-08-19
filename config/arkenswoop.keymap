@@ -74,6 +74,46 @@
             #binding-cells = <0>;
             mods = <(MOD_LALT)>;
         };
+        mod_s_quote: mod_s_quote {
+            compatible = "zmk,behavior-mod-morph";
+            label = "MOD_S_QUOTE";
+            bindings =
+                <&real_s_quote>,
+                <&kp SINGLE_QUOTE>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_LALT)>;
+        };
+        mod_grave: mod_grave {
+            compatible = "zmk,behavior-mod-morph";
+            label = "MOD_GRAVE";
+            bindings =
+                <&real_grave>,
+                <&kp GRAVE>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_LALT)>;
+        };
+        mod_caret: mod_caret {
+            compatible = "zmk,behavior-mod-morph";
+            label = "MOD_CARET";
+            bindings =
+                <&real_caret>,
+                <&kp CARET>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_LALT)>;
+        };
+        mod_tilde: mod_tilde {
+            compatible = "zmk,behavior-mod-morph";
+            label = "MOD_TILDE";
+            bindings =
+                <&real_tilde>,
+                <&kp TILDE>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_LALT)>;
+        };
     };
 
     combos {
@@ -217,10 +257,10 @@
 
         symbols {
             bindings = <
-&kp COMMA  &kp LESS_THAN  &kp GREATER_THAN  &tap_currency          &kp GRAVE      &kp CARET  &kp SEMICOLON      &kp LEFT_BRACKET      &kp RIGHT_BRACKET     &kp PERIOD
- &kp EXCL      &kp MINUS          &kp PLUS      &kp EQUAL   &kp SINGLE_QUOTE  &kp AMPERSAND      &kp COLON  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS   &kp QUESTION
-&kp TILDE      &kp POUND      &kp ASTERISK    &kp PERCENT  &kp DOUBLE_QUOTES      &kp SLASH         &kp AT        &kp LEFT_BRACE        &kp RIGHT_BRACE  &kp BACKSLASH
-                                    &trans         &trans             &trans         &trans         &trans                &trans
+ &kp COMMA  &kp LESS_THAN  &kp GREATER_THAN  &tap_currency     &mod_grave     &mod_caret  &kp SEMICOLON      &kp LEFT_BRACKET      &kp RIGHT_BRACKET     &kp PERIOD
+  &kp EXCL      &kp MINUS          &kp PLUS      &kp EQUAL   &mod_s_quote  &kp AMPERSAND      &kp COLON  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS   &kp QUESTION
+&mod_tilde      &kp POUND      &kp ASTERISK    &kp PERCENT  &mod_d_quotes      &kp SLASH         &kp AT        &kp LEFT_BRACE        &kp RIGHT_BRACE  &kp BACKSLASH
+                                     &trans         &trans         &trans         &trans         &trans                &trans
             >;
         };
 
