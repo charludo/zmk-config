@@ -13,14 +13,6 @@
 
 / {
     behaviors {
-        tap_shift: tap_shift {
-            compatible = "zmk,behavior-tap-dance";
-            label = "TAP_SHIFT";
-            #binding-cells = <0>;
-            bindings =
-                <&kp LEFT_SHIFT>,
-                <&caps_word>;
-        };
         num_word: behavior_num_word {
             compatible = "zmk,behavior-caps-word";
             label = "NUM_WORD";
@@ -113,6 +105,26 @@
 
             #binding-cells = <0>;
             mods = <(MOD_LALT)>;
+        };
+        nav_activate: nav_activate {
+            compatible = "zmk,behavior-hold-tap";
+            label = "NAV_ACTIVATE";
+            bindings =
+                <&mo>,
+                <&kp>;
+
+            #binding-cells = <2>;
+            tapping-term-ms = <200>;
+        };
+        shift_activate: shift_activate {
+            compatible = "zmk,behavior-hold-tap";
+            label = "SHIFT_ACTIVATE";
+            bindings =
+                <&kp>,
+                <&caps_word>;
+
+            #binding-cells = <2>;
+            tapping-term-ms = <200>;
         };
     };
 
@@ -265,10 +277,10 @@
 
         default {
             bindings = <
-&kp COMMA  &kp V   &kp L              &kp C              &kp W       &kp K  &kp H   &kp G  &kp F  &kp DOT
-    &kp U  &kp I   &kp A              &kp E              &kp O       &kp S  &kp N   &kp R  &kp T    &kp D
-    &kp X  &kp P   &kp M              &kp Y  &kp DOUBLE_QUOTES   &kp SLASH  &kp Z   &kp B  &kp J    &kp Q
-                  &trans  &num_activate 1 0          &kp SPACE  &tap_shift  &mo 2  &trans
+&kp COMMA  &kp V   &kp L              &kp C                  &kp W                     &kp K  &kp H   &kp G  &kp F  &kp DOT
+    &kp U  &kp I   &kp A              &kp E                  &kp O                     &kp S  &kp N   &kp R  &kp T    &kp D
+    &kp X  &kp P   &kp M              &kp Y      &kp DOUBLE_QUOTES                 &kp SLASH  &kp Z   &kp B  &kp J    &kp Q
+                  &trans  &num_activate 1 0  &nav_activate 3 SPACE  &shift_activate LSHIFT 0  &mo 2  &trans
             >;
 
             sensor-bindings =
