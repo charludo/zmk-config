@@ -16,7 +16,7 @@
             label = "NUM_WORD";
             #binding-cells = <0>;
             layers = <2>;
-            continue-list = <BACKSPACE DELETE DOT COMMA>;
+            continue-list = <BACKSPACE DELETE DOT COMMA LPAR RPAR>;
             ignore-numbers;
         };
         num_activate: num_activate {
@@ -365,7 +365,7 @@
             >;
 
             sensor-bindings =
-                <&inc_dec_mwh U_WH_U U_WH_D>,
+                <&inc_dec_kp U_WH_U U_WH_D>,
                 <&inc_dec_kp LS(LC(R)) U>;
         };
 
