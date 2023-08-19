@@ -1,7 +1,5 @@
 #pragma once
 
-#include <dt-bindings/zmk/mouse.h>
-
 // Copied from https://github.com/T4CORUN/zmk-config/blob/34b44a78fa057029da4901533f4dfb751d2bf727/T4CORUN/mouse.dtsi
 
 #define U_MOUSE_MOVE_MAX 3000
