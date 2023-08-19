@@ -253,6 +253,11 @@
    &trans             &kp POUND           &kp ASTERISK    &kp PERCENT      &trans   &kp FSLH  &kp N1  &kp N2  &kp N3  &trans
                                                 &trans         &trans      &trans     &trans  &trans  &trans
             >;
+
+            sensor-bindings =
+                <&inc_dec_kp DOWN_ARROW UP_ARROW>,
+                <&inc_dec_kp RIGHT LEFT>;
+
         };
 
         symbols {
@@ -262,6 +267,11 @@
 &mod_tilde      &kp POUND      &kp ASTERISK    &kp PERCENT  &mod_d_quotes      &kp SLASH         &kp AT        &kp LEFT_BRACE        &kp RIGHT_BRACE  &kp BACKSLASH
                                      &trans         &trans         &trans         &trans         &trans                &trans
             >;
+
+            sensor-bindings =
+                <&inc_dec_kp DOWN_ARROW UP_ARROW>,
+                <&inc_dec_kp RIGHT LEFT>;
+
         };
 
         navigation {
@@ -284,6 +294,11 @@
 &none  &none  &none         &none  &confirm_bt_reset  &none  &kp F1  &kp F2  &kp F3  &kp F12
               &none         &none              &none  &none   &none   &none
             >;
+
+            sensor-bindings =
+                <&inc_dec_kp DOWN_ARROW UP_ARROW>,
+                <&inc_dec_kp RIGHT LEFT>;
+
         };
     };
 };
