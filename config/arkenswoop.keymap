@@ -7,6 +7,9 @@
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/keys.h>
 
+#include "mouse.dtsi"
+#include "combo.dtsi"
+
 / {
     behaviors {
         tap_shift: tap_shift {
@@ -16,6 +19,15 @@
             bindings =
                 <&kp LEFT_SHIFT>,
                 <&caps_word>;
+        };
+
+        num_word: behavior_num_word {
+            compatible = "zmk,behavior-caps-word";
+            label = "NUM_WORD";
+            #binding-cells = <0>;
+            layers = <2>;
+            continue-list = <BACKSPACE DELETE DOT COMMA ASTERISK LEFT_PAENTHESIS RIGHT_PARENTHESIS PLUS MINUS SLASH PERCENT UNDERSCORE COLON LEFT RIGHT>;
+            ignore-numbers;
         };
     };
 
@@ -31,7 +43,7 @@
             >;
 
             sensor-bindings =
-                <&inc_dec_kp K_SCROLL_DOWN K_SCROLL_UP>,
+                <&inc_dec_mwh SCROLL_DOWN SCROLL_UP>,
                 <&inc_dec_kp LS(LC(R)) U>;
         };
 
