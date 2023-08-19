@@ -145,7 +145,7 @@
             layers = <0>;
         };
 
-        combo_A {
+        combo_as {
             bindings = <&umlaut_A>;
             key-positions = <13 12 33>;
             layers = <0>;
@@ -157,7 +157,7 @@
             layers = <0>;
         };
 
-        combo_O {
+        combo_os {
             bindings = <&umlaut_O>;
             key-positions = <13 14 33>;
             layers = <0>;
@@ -169,7 +169,7 @@
             layers = <0>;
         };
 
-        combo_U {
+        combo_us {
             bindings = <&umlaut_U>;
             key-positions = <13 10 33>;
             layers = <0>;
@@ -303,21 +303,21 @@
             #binding-cells = <0>;
             bindings = <&kp RA(S)>;
         };
-        umlaut_A: umlaut_A {
+        umlaut_as: umlaut_as {
             compatible = "zmk,behavior-macro";
-            label = "UMLAUT_A";
+            label = "UMLAUT_AS";
             #binding-cells = <0>;
             bindings = <&kp DQT &kp LS(A)>;
         };
-        umlaut_O: umlaut_O {
+        umlaut_os: umlaut_os {
             compatible = "zmk,behavior-macro";
-            label = "UMLAUT_O";
+            label = "UMLAUT_OS";
             #binding-cells = <0>;
             bindings = <&kp DQT &kp LS(O)>;
         };
-        umlaut_U: umlaut_U {
+        umlaut_us: umlaut_us {
             compatible = "zmk,behavior-macro";
-            label = "UMLAUT_U";
+            label = "UMLAUT_US";
             #binding-cells = <0>;
             bindings = <&kp DQT &kp LS(U)>;
         };
