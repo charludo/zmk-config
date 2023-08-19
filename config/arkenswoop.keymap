@@ -202,6 +202,36 @@
             bindings = <&kp LMETA>;
             key-positions = <18 28>;
         };
+
+        combo_enter {
+            bindings = <&kp ENTER>;
+            key-positions = <16 17 18>;
+        };
+
+        combo_tab {
+            bindings = <&trans>;
+            key-positions = <11 12 13>;
+        };
+
+        combo_escape {
+            bindings = <&kp ESCAPE>;
+            key-positions = <11 12 10>;
+        };
+
+        combo_backspace {
+            bindings = <&kp BACKSPACE>;
+            key-positions = <17 18 19>;
+        };
+
+        combo_delete_left {
+            bindings = <&kp DELETE>;
+            key-positions = <0 1 2>;
+        };
+
+        combo_delete_right {
+            bindings = <&kp DELETE>;
+            key-positions = <7 8 9>;
+        };
     };
 
     macros {
