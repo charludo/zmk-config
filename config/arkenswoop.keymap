@@ -38,6 +38,14 @@
             tapping-term-ms = <200>;
             global-quick-tap;
         };
+        tap_currency: tap_currency {
+            compatible = "zmk,behavior-tap-dance";
+            label = "TAP_CURRENCY";
+            #binding-cells = <0>;
+            bindings =
+                <&kp DOLLAR>,
+                <&kp RA(NUMBER_5)>;
+        };
     };
 
     combos {
@@ -49,10 +57,10 @@
 
         default {
             bindings = <
-&kp COMMA  &kp V    &kp L    &kp C      &kp W       &kp K              &kp H    &kp G  &kp F  &kp DOT
-    &kp U  &kp I    &kp A    &kp E      &kp O       &kp S              &kp N    &kp R  &kp T    &kp D
-    &kp X  &kp P    &kp M    &kp Y    &kp DOT   &kp SLASH              &kp Z    &kp B  &kp J    &kp Q
-                  &kp DOT  &kp DOT  &kp SPACE  &tap_shift  &num_activate 1 0  &kp DOT
+&kp COMMA  &kp V    &kp L    &kp C              &kp W       &kp K              &kp H    &kp G  &kp F  &kp DOT
+    &kp U  &kp I    &kp A    &kp E              &kp O       &kp S              &kp N    &kp R  &kp T    &kp D
+    &kp X  &kp P    &kp M    &kp Y  &kp DOUBLE_QUOTES   &kp SLASH              &kp Z    &kp B  &kp J    &kp Q
+                  &kp DOT  &kp DOT          &kp SPACE  &tap_shift  &num_activate 1 0  &kp DOT
             >;
 
             sensor-bindings =
@@ -66,6 +74,15 @@
    &trans  &kp N4  &kp N5  &kp N6  &trans  &kp COLON  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp PERCENT   &trans
    &kp N0  &kp N1  &kp N2  &kp N3  &trans   &kp FSLH             &kp ASTRK              &kp EQUAL    &kp MINUS   &trans
                    &trans  &trans  &trans     &trans                &trans                 &trans
+            >;
+        };
+
+        symbols {
+            bindings = <
+&kp COMMA  &kp LESS_THAN  &kp GREATER_THAN  &tap_currency          &kp GRAVE      &kp CARET  &kp SEMICOLON      &kp LEFT_BRACKET      &kp RIGHT_BRACKET     &kp PERIOD
+ &kp EXCL      &kp MINUS          &kp PLUS      &kp EQUAL   &kp SINGLE_QUOTE  &kp AMPERSAND      &kp COLON  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS   &kp QUESTION
+&kp TILDE      &kp POUND      &kp ASTERISK    &kp PERCENT  &kp DOUBLE_QUOTES      &kp SLASH         &kp AT        &kp LEFT_BRACE        &kp RIGHT_BRACE  &kp BACKSLASH
+                                    &trans         &trans             &trans         &trans         &trans                &trans
             >;
         };
     };
