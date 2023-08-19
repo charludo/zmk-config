@@ -19,6 +19,8 @@
          &kp K     &kp L   &kp SEMI  &kp SQT  &kp LSHFT    &kp Z     &kp X    &kp C  &kp V  &kp B
                               &kp N    &kp M  &kp COMMA  &kp DOT  &kp FSLH  &kp ESC
             >;
+
+            sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp PG_UP PG_DN>;
         };
 
         lower_layer {
