@@ -365,7 +365,7 @@
             >;
 
             sensor-bindings =
-                <&inc_dec_kp &mwh SCROLL_UP &mwh SCROLL_DOWN>,
+                <&inc_dec_mwh SCROLL_DOWN SCROLL_UP>,
                 <&inc_dec_kp LS(LC(R)) U>;
         };
 
@@ -418,7 +418,7 @@
 
             sensor-bindings =
                 <&inc_dec_kp DOWN_ARROW UP_ARROW>,
-                <&inc_dec_kp RIGHT LEFT>;
+                <&inc_dec_kp &inc_dec_kp LC(TAB) LC(LS(TAB))>;
         };
     };
 };
