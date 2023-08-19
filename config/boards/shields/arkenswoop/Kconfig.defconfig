@@ -4,7 +4,7 @@
 if SHIELD_ARKENSWOOP_LEFT
 
 config ZMK_KEYBOARD_NAME
-    default "Arkenswoop"
+    default "arkenswoop"
 
 config ZMK_SPLIT_ROLE_CENTRAL
     default y
