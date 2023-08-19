@@ -64,6 +64,16 @@
                 <&none>,
                 <&bt BT_CLR>;
         };
+        mod_d_quotes: mod_d_quotes {
+            compatible = "zmk,behavior-mod-morph";
+            label = "MOD_D_QUOTES";
+            bindings =
+                <&real_d_quotes>,
+                <&kp DOUBLE_QUOTES>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_LALT)>;
+        };
     };
 
     combos {
