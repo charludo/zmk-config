@@ -232,6 +232,30 @@
             bindings = <&kp DELETE>;
             key-positions = <7 8 9>;
         };
+
+        combo_questionmark {
+            bindings = <&kp QUESTION>;
+            key-positions = <19 29>;
+            layers = <0>;
+        };
+
+        combo_exclamationmark {
+            bindings = <&kp EXCLAMATION>;
+            key-positions = <10 20>;
+            layers = <0>;
+        };
+
+        combo_colon {
+            bindings = <&kp COLON>;
+            key-positions = <5 15>;
+            layers = <0>;
+        };
+
+        combo_s_quote {
+            bindings = <&real_s_quote>;
+            key-positions = <4 14>;
+            layers = <0>;
+        };
     };
 
     macros {
@@ -316,7 +340,7 @@
             bindings = <
 &kp COMMA  &kp V   &kp L              &kp C                  &kp W                     &kp K  &kp H   &kp G  &kp F  &kp DOT
     &kp U  &kp I   &kp A              &kp E                  &kp O                     &kp S  &kp N   &kp R  &kp T    &kp D
-    &kp X  &kp P   &kp M              &kp Y      &kp DOUBLE_QUOTES                 &kp SLASH  &kp Z   &kp B  &kp J    &kp Q
+    &kp X  &kp P   &kp M              &kp Y         &real_d_quotes                 &kp SLASH  &kp Z   &kp B  &kp J    &kp Q
                   &trans  &num_activate 1 0  &nav_activate 3 SPACE  &shift_activate LSHIFT 0  &mo 2  &trans
             >;
 
