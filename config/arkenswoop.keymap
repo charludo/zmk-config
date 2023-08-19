@@ -16,7 +16,7 @@
             label = "NUM_WORD";
             #binding-cells = <0>;
             layers = <2>;
-            continue-list = <BACKSPACE DELETE DOT COMMA LPAR RPAR STAR PLUS MINUS SLASH COLON COMMA PERIOD POUND PERCENT>;
+            continue-list = <TAB BACKSPACE DELETE DOT COMMA LPAR RPAR STAR PLUS MINUS SLASH COLON COMMA PERIOD POUND PERCENT>;
             ignore-numbers;
         };
         num_activate: num_activate {
@@ -365,7 +365,7 @@
             >;
 
             sensor-bindings =
-                <&inc_dec_kp SCROLL_VERT(U_MOUSE_SCROLL_MAX) SCROLL_VERT(-U_MOUSE_SCROLL_MAX)>,
+                <&inc_dec_kp &mwh SCROLL_UP &mwh SCROLL_DOWN>,
                 <&inc_dec_kp LS(LC(R)) U>;
         };
 
