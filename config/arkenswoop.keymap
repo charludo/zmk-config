@@ -57,10 +57,10 @@
 
         default {
             bindings = <
-&kp COMMA  &kp V    &kp L    &kp C              &kp W       &kp K              &kp H    &kp G  &kp F  &kp DOT
-    &kp U  &kp I    &kp A    &kp E              &kp O       &kp S              &kp N    &kp R  &kp T    &kp D
-    &kp X  &kp P    &kp M    &kp Y  &kp DOUBLE_QUOTES   &kp SLASH              &kp Z    &kp B  &kp J    &kp Q
-                  &kp DOT  &kp DOT          &kp SPACE  &tap_shift  &num_activate 1 0  &kp DOT
+&kp COMMA  &kp V    &kp L              &kp C              &kp W       &kp K   &kp H    &kp G  &kp F  &kp DOT
+    &kp U  &kp I    &kp A              &kp E              &kp O       &kp S   &kp N    &kp R  &kp T    &kp D
+    &kp X  &kp P    &kp M              &kp Y  &kp DOUBLE_QUOTES   &kp SLASH   &kp Z    &kp B  &kp J    &kp Q
+                  &kp DOT  &num_activate 1 0          &kp SPACE  &tap_shift  &trans  &kp DOT
             >;
 
             sensor-bindings =
@@ -70,10 +70,10 @@
 
         numbers {
             bindings = <
-&kp COMMA  &kp N7  &kp N8  &kp N9  &trans     &trans                &trans                 &trans       &trans  &kp DOT
-   &trans  &kp N4  &kp N5  &kp N6  &trans  &kp COLON  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp PERCENT   &trans
-   &kp N0  &kp N1  &kp N2  &kp N3  &trans   &kp FSLH             &kp ASTRK              &kp EQUAL    &kp MINUS   &trans
-                   &trans  &trans  &trans     &trans                &trans                 &trans
+&kp COMMA  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &tap_currency  &kp PERIOD     &trans  &kp N7  &kp N8  &kp N9  &kp N0
+   &trans             &kp MINUS               &kp PLUS      &kp EQUAL      &trans  &kp COLON  &kp N4  &kp N5  &kp N6  &trans
+   &trans             &kp POUND           &kp ASTERISK    &kp PERCENT      &trans   &kp FSLH  &kp N1  &kp N2  &kp N3  &trans
+                                                &trans         &trans      &trans     &trans  &trans  &trans
             >;
         };
 
