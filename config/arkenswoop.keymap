@@ -271,6 +271,10 @@
 &trans  &kp LC(X)  &kp LC(C)  &kp LC(V)  &kp LC(Z)  &trans  &kp N1  &kp N2  &kp N3  &trans
                       &trans     &trans     &trans  &trans  &trans  &trans
             >;
+
+            sensor-bindings =
+                <&inc_dec_kp DOWN_ARROW UP_ARROW>,
+                <&inc_dec_kp RIGHT LEFT>;
         };
 
         function {
