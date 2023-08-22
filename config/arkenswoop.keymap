@@ -310,7 +310,7 @@
             compatible = "zmk,behavior-macro";
             label = "UMLAUT_S";
             #binding-cells = <0>;
-            bindings = <&kp KC_RALT(S)>;
+            bindings = <&kp RIGHT_ALT &kp RA(S)>;
         };
         umlaut_as: umlaut_as {
             compatible = "zmk,behavior-macro";
