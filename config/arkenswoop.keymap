@@ -24,7 +24,7 @@
             compatible = "zmk,behavior-caps-word";
             label = "NUM_WORD";
             #binding-cells = <0>;
-            layers = <2>;
+            layers = <1>;
             continue-list = <TAB BACKSPACE DELETE DOT COMMA LPAR RPAR STAR PLUS MINUS SLASH COLON COMMA PERIOD POUND PERCENT>;
             ignore-numbers;
         };
