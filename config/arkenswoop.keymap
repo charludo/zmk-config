@@ -367,10 +367,10 @@
 
         default {
             bindings = <
-&kp COMMA  &kp V   &kp L              &kp C                  &kp W                     &kp K                 &kp H   &kp G  &kp F  &kp DOT
-    &kp U  &kp I   &kp A              &kp E                  &kp O                     &kp S                 &kp N   &kp R  &kp T    &kp D
-    &kp X  &kp P   &kp M              &kp Y         &real_d_quotes                 &kp SLASH                 &kp Z   &kp B  &kp J    &kp Q
-                  &trans  &num_activate 1 0  &nav_activate 3 SPACE  &shift_activate LSHIFT 0  &symbol_activate 2 0  &trans
+&kp COMMA  &kp V   &kp L                 &kp C                  &kp W                     &kp K              &kp H   &kp G  &kp F  &kp DOT
+    &kp U  &kp I   &kp A                 &kp E                  &kp O                     &kp S              &kp N   &kp R  &kp T    &kp D
+    &kp X  &kp P   &kp M                 &kp Y         &real_d_quotes                 &kp SLASH              &kp Z   &kp B  &kp J    &kp Q
+                  &trans  &symbol_activate 2 0  &nav_activate 3 SPACE  &shift_activate LSHIFT 0  &num_activate 1 0  &trans
             >;
 
             sensor-bindings =
