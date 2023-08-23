@@ -226,7 +226,7 @@
         };
 
         combo_tab {
-            bindings = <&trans>;
+            bindings = <&kp TAB>;
             key-positions = <11 12 13>;
         };
 
