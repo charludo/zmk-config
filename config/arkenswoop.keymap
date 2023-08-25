@@ -168,33 +168,15 @@
             layers = <0>;
         };
 
-        combo_as {
-            bindings = <&umlaut_as>;
-            key-positions = <13 12 33>;
-            layers = <0>;
-        };
-
         combo_o {
             bindings = <&umlaut_o>;
             key-positions = <13 14>;
             layers = <0>;
         };
 
-        combo_os {
-            bindings = <&umlaut_os>;
-            key-positions = <13 14 33>;
-            layers = <0>;
-        };
-
         combo_u {
             bindings = <&umlaut_u>;
             key-positions = <13 10>;
-            layers = <0>;
-        };
-
-        combo_us {
-            bindings = <&umlaut_us>;
-            key-positions = <13 10 33>;
             layers = <0>;
         };
 
@@ -331,24 +313,6 @@
             label = "UMLAUT_S";
             #binding-cells = <0>;
             bindings = <&kp RIGHT_ALT &kp RA(S)>;
-        };
-        umlaut_as: umlaut_as {
-            compatible = "zmk,behavior-macro";
-            label = "UMLAUT_AS";
-            #binding-cells = <0>;
-            bindings = <&kp DQT &kp LS(A)>;
-        };
-        umlaut_os: umlaut_os {
-            compatible = "zmk,behavior-macro";
-            label = "UMLAUT_OS";
-            #binding-cells = <0>;
-            bindings = <&kp DQT &kp LS(O)>;
-        };
-        umlaut_us: umlaut_us {
-            compatible = "zmk,behavior-macro";
-            label = "UMLAUT_US";
-            #binding-cells = <0>;
-            bindings = <&kp DQT &kp LS(U)>;
         };
         real_d_quotes: real_d_quotes {
             compatible = "zmk,behavior-macro";
