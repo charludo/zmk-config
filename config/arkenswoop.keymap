@@ -142,7 +142,7 @@
             label = "SYMBOL_ACTIVATE";
             bindings =
                 <&mo>,
-                <&key_repeat>;
+                <&sl>;
 
             #binding-cells = <2>;
             tapping-term-ms = <200>;
@@ -384,7 +384,7 @@
     &kp X  &kp V   &kp L                 &kp C                  &kp W                     &kp K              &kp H   &kp G  &kp F       &kp Q
     &kp U  &kp I   &kp A                 &kp E                  &kp O                     &kp S              &kp N   &kp R  &kp T       &kp D
 &kp COMMA  &kp P   &kp M                 &kp Y         &real_d_quotes                 &kp COLON              &kp Z   &kp B  &kp J  &kp PERIOD
-                  &trans  &symbol_activate 2 0  &nav_activate 3 SPACE  &shift_activate LSHIFT 0  &num_activate 1 0  &trans
+                  &trans  &symbol_activate 2 2  &nav_activate 3 SPACE  &shift_activate LSHIFT 0  &num_activate 1 0  &trans
             >;
 
             sensor-bindings =
