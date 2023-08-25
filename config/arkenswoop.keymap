@@ -299,6 +299,12 @@
             key-positions = <27 28 29>;
             layers = <0 1 2>;
         };
+
+        combo_pipe {
+            bindings = <&none>;
+            key-positions = <15 16>;
+            layers = <2>;
+        };
     };
 
     macros {
@@ -394,10 +400,10 @@
 
         numbers {
             bindings = <
-&kp COMMA     &trans        &trans  &tap_currency  &kp PERIOD    &trans  &kp N7  &kp N8  &kp N9  &kp N0
-   &trans  &kp MINUS      &kp PLUS      &kp EQUAL      &trans    &trans  &kp N4  &kp N5  &kp N6  &trans
-&kp POUND     &trans  &kp ASTERISK    &kp PERCENT      &trans  &kp FSLH  &kp N1  &kp N2  &kp N3  &trans
-                            &trans         &trans      &trans    &trans  &trans  &trans
+&tap_currency     &trans        &trans    &kp POUND  &trans     &trans  &kp N7  &kp N8  &kp N9      &kp N0
+       &trans  &kp MINUS      &kp PLUS    &kp EQUAL  &trans  &kp SLASH  &kp N4  &kp N5  &kp N6      &trans
+    &kp COMMA     &trans  &kp ASTERISK  &kp PERCENT  &trans  &kp COLON  &kp N1  &kp N2  &kp N3  &kp PERIOD
+                                &trans       &trans  &trans     &trans  &trans  &trans
             >;
 
             sensor-bindings =
@@ -407,10 +413,10 @@
 
         symbols {
             bindings = <
-&kp COMMA  &kp LESS_THAN  &kp GREATER_THAN  &tap_currency     &mod_grave  &mod_tilde_caret  &kp SEMICOLON      &kp LEFT_BRACKET      &kp RIGHT_BRACKET     &kp PERIOD
- &kp EXCL      &kp MINUS          &kp PLUS      &kp EQUAL   &mod_s_quote     &kp AMPERSAND      &kp COLON  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS   &kp QUESTION
-&kp POUND      &kp UNDER      &kp ASTERISK    &kp PERCENT  &mod_d_quotes         &kp SLASH         &kp AT        &kp LEFT_BRACE        &kp RIGHT_BRACE  &kp BACKSLASH
-                                    &trans         &trans         &trans            &trans         &trans                &trans
+&tap_currency  &kp LESS_THAN  &kp GREATER_THAN    &kp POUND     &mod_grave  &kp AMPERSAND         &kp AT      &kp LEFT_BRACKET      &kp RIGHT_BRACKET  &mod_tilde_caret
+     &kp EXCL      &kp MINUS          &kp PLUS    &kp EQUAL   &mod_s_quote      &kp SLASH  &kp BACKSLASH  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS      &kp QUESTION
+    &kp COMMA      &kp UNDER      &kp ASTERISK  &kp PERCENT  &mod_d_quotes      &kp COLON  &kp SEMICOLON        &kp LEFT_BRACE        &kp RIGHT_BRACE        &kp PERIOD
+                                        &trans       &trans         &trans         &trans         &trans                &trans
             >;
 
             sensor-bindings =
