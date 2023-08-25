@@ -162,7 +162,7 @@
     combos {
         compatible = "zmk,combos";
 
-        combo_tab {
+        combo_tabulatore {
             bindings = <&kp TAB>;
             key-positions = <13 12 11>;
             layers = <0 1 2 3 4>;
@@ -234,6 +234,7 @@
             bindings = <&umlaut_a>;
             key-positions = <12 13>;
             layers = <0>;
+            slow-release;
         };
 
         combo_escape {
