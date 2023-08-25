@@ -219,31 +219,37 @@
         combo_enter {
             bindings = <&kp ENTER>;
             key-positions = <16 17 18>;
+            timeout-ms = <85>;
         };
 
         combo_tab {
             bindings = <&kp TAB>;
             key-positions = <11 12 13>;
+            timeout-ms = <85>;
         };
 
         combo_escape {
             bindings = <&kp ESCAPE>;
             key-positions = <11 12 10>;
+            timeout-ms = <85>;
         };
 
         combo_backspace {
             bindings = <&kp BACKSPACE>;
             key-positions = <17 18 19>;
+            timeout-ms = <85>;
         };
 
         combo_delete_left {
             bindings = <&kp DELETE>;
             key-positions = <0 1 2>;
+            timeout-ms = <85>;
         };
 
         combo_delete_right {
             bindings = <&kp DELETE>;
             key-positions = <7 8 9>;
+            timeout-ms = <85>;
         };
 
         combo_questionmark {
@@ -274,12 +280,14 @@
             bindings = <&kp LEFT_PARENTHESIS>;
             key-positions = <20 21 22>;
             layers = <0 1 2>;
+            timeout-ms = <85>;
         };
 
         combo_paren_right {
             bindings = <&kp RIGHT_PARENTHESIS>;
             key-positions = <27 28 29>;
             layers = <0 1 2>;
+            timeout-ms = <85>;
         };
 
         combo_pipe {
