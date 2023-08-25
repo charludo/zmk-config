@@ -162,10 +162,11 @@
     combos {
         compatible = "zmk,combos";
 
-        combo_a {
-            bindings = <&umlaut_a>;
-            key-positions = <13 12>;
-            layers = <0>;
+        combo_tab {
+            bindings = <&kp TAB>;
+            key-positions = <13 12 11>;
+            layers = <0 1 2 3 4>;
+            timeout-ms = <85>;
         };
 
         combo_o {
@@ -229,11 +230,10 @@
             layers = <0 1 2 3 4>;
         };
 
-        combo_tab {
-            bindings = <&kp TAB>;
-            key-positions = <11 12 13>;
-            timeout-ms = <85>;
-            layers = <0 1 2 3 4>;
+        combo_a {
+            bindings = <&umlaut_a>;
+            key-positions = <12 13>;
+            layers = <0>;
         };
 
         combo_escape {
@@ -374,7 +374,7 @@
     &kp X  &kp V  &kp L                 &kp C                  &kp W                     &kp K              &kp H  &kp G  &kp F       &kp Q
     &kp U  &kp I  &kp A                 &kp E                  &kp O                     &kp S              &kp N  &kp R  &kp T       &kp D
 &kp COMMA  &kp P  &kp M                 &kp Y         &real_d_quotes                 &kp COLON              &kp Z  &kp B  &kp J  &kp PERIOD
-                  &kp E  &symbol_activate 2 2  &nav_activate 3 SPACE  &shift_activate LSHIFT 0  &num_activate 1 0  &kp F
+                  &none  &symbol_activate 2 2  &nav_activate 3 SPACE  &shift_activate LSHIFT 0  &num_activate 1 0  &none
             >;
 
             sensor-bindings =
@@ -426,7 +426,7 @@
 &trans  &kp PRINTSCREEN       &none  &out OUT_BLE       &bt BT_SEL 0  &none  &kp F7  &kp F8  &kp F9  &kp F10
  &none            &none       &none  &out OUT_USB       &bt BT_SEL 1  &none  &kp F4  &kp F5  &kp F6  &kp F11
  &none            &none       &none         &none  &confirm_bt_reset  &none  &kp F1  &kp F2  &kp F3  &kp F12
-                         &kp K_MUTE         &none              &none  &none   &none  &trans
+                         &kp K_MUTE         &none              &none  &none   &none   &none
             >;
 
             sensor-bindings =
