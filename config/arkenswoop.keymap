@@ -390,10 +390,10 @@
 
         navigation {
             bindings = <
-&kp LC(A)      &none          &kp UP      &none      &none   &none  &kp N7      &kp N8  &kp N9  &kp N0
-    &mo 4   &kp LEFT        &kp DOWN  &kp RIGHT      &none   &none  &kp N4      &kp N5  &kp N6   &none
-&kp LC(D)  &kp LC(C)       &kp LC(X)  &kp LC(V)  &kp LC(T)   &none  &kp N1      &kp N2  &kp N3   &none
-                      &kp K_PREVIOUS     &trans     &trans  &trans  &trans  &kp K_NEXT
+&kp LC(A)  &kp LA(LEFT)          &kp UP  &kp LA(RIGHT)      &none   &none  &kp N7      &kp N8  &kp N9  &kp N0
+    &mo 4      &kp LEFT        &kp DOWN      &kp RIGHT      &none   &none  &kp N4      &kp N5  &kp N6   &none
+&kp LC(D)     &kp LC(C)       &kp LC(X)      &kp LC(V)  &kp LC(T)   &none  &kp N1      &kp N2  &kp N3   &none
+                         &kp K_PREVIOUS         &trans     &trans  &trans  &trans  &kp K_NEXT
             >;
 
             sensor-bindings =
@@ -403,10 +403,10 @@
 
         function {
             bindings = <
-&kp PRINTSCREEN  &none       &none  &out OUT_BLE       &bt BT_SEL 0  &none  &kp F7  &kp F8  &kp F9  &kp F10
-          &none  &none       &none  &out OUT_USB       &bt BT_SEL 1  &none  &kp F4  &kp F5  &kp F6  &kp F11
-          &none  &none       &none         &none  &confirm_bt_reset  &none  &kp F1  &kp F2  &kp F3  &kp F12
-                        &kp K_MUTE         &none              &none  &none   &none  &trans
+&trans  &kp PRINTSCREEN       &none  &out OUT_BLE       &bt BT_SEL 0  &none  &kp F7  &kp F8  &kp F9  &kp F10
+ &none            &none       &none  &out OUT_USB       &bt BT_SEL 1  &none  &kp F4  &kp F5  &kp F6  &kp F11
+ &none            &none       &none         &none  &confirm_bt_reset  &none  &kp F1  &kp F2  &kp F3  &kp F12
+                         &kp K_MUTE         &none              &none  &none   &none  &trans
             >;
 
             sensor-bindings =
