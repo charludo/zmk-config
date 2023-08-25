@@ -237,7 +237,7 @@
 
         combo_escape {
             bindings = <&kp ESCAPE>;
-            key-positions = <11 12 10>;
+            key-positions = <0 1 2>;
             timeout-ms = <85>;
             layers = <0 1 2 3 4>;
         };
@@ -251,7 +251,7 @@
 
         combo_delete_left {
             bindings = <&kp DELETE>;
-            key-positions = <0 1 2>;
+            key-positions = <10 11 12>;
             timeout-ms = <85>;
             layers = <0 1 2 4 3>;
         };
