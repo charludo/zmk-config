@@ -302,7 +302,7 @@
         };
 
         combo_pipe {
-            bindings = <&none>;
+            bindings = <&kp PIPE>;
             key-positions = <15 16>;
             layers = <2>;
         };
