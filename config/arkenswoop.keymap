@@ -401,7 +401,7 @@
             bindings = <
     &kp J  &kp L  &kp U                 &kp A                  &kp Q                     &kp W              &kp B  &kp D  &kp G       &kp Y
     &kp C  &kp R  &kp I                 &kp E                  &kp O                     &kp M              &kp N  &kp T  &kp S       &kp H
-&kp COMMA  &kp P  &kp X                 &kp V         &real_d_quotes                 &kp COLON              &kp F  &kp Z  &kp K  &kp PERIOD
+&kp COMMA  &kp V  &kp X                 &kp P         &real_d_quotes                 &kp COLON              &kp F  &kp Z  &kp K  &kp PERIOD
                   &none  &symbol_activate 2 2  &nav_activate 3 SPACE  &shift_activate LSHIFT 0  &num_activate 1 0  &none
             >;
 
