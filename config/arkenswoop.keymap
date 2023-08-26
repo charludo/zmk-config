@@ -233,7 +233,7 @@
             bindings = <&kp TAB>;
             key-positions = <11 12 13>;
             layers = <0 1 2 4 3>;
-            timeout-ms = <41>;
+            timeout-ms = <85>;
         };
 
         combo_escape {
@@ -333,6 +333,12 @@
             bindings = <&kp DELETE>;
             key-positions = <7 9>;
             timeout-ms = <85>;
+            layers = <0 1 2 4 3>;
+        };
+
+        tab_test {
+            bindings = <&kp TAB>;
+            key-positions = <12 13 14>;
             layers = <0 1 2 4 3>;
         };
     };
