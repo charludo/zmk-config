@@ -224,14 +224,14 @@
 
         combo_enter {
             bindings = <&kp ENTER>;
-            key-positions = <16 17 18>;
+            key-positions = <6 7 8>;
             timeout-ms = <85>;
             layers = <0 1 2 3 4>;
         };
 
         combo_tab {
             bindings = <&kp TAB>;
-            key-positions = <11 12 13>;
+            key-positions = <1 2 3>;
             layers = <0 1 2 4 3>;
             timeout-ms = <85>;
         };
@@ -333,12 +333,6 @@
             bindings = <&kp DELETE>;
             key-positions = <7 9>;
             timeout-ms = <85>;
-            layers = <0 1 2 4 3>;
-        };
-
-        tab_test {
-            bindings = <&kp TAB>;
-            key-positions = <12 13 14>;
             layers = <0 1 2 4 3>;
         };
     };
