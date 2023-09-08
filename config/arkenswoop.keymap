@@ -245,7 +245,7 @@
 
         combo_backspace {
             bindings = <&kp BACKSPACE>;
-            key-positions = <26 27 28>;
+            key-positions = <16 17 18>;
             timeout-ms = <85>;
             layers = <0 1 2 4 3>;
         };
