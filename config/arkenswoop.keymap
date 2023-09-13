@@ -246,14 +246,14 @@
         combo_backspace {
             bindings = <&kp BACKSPACE>;
             key-positions = <16 17 18>;
-            timeout-ms = <85>;
+            timeout-ms = <150>;
             layers = <0 1 2 4 3>;
         };
 
         combo_delete {
             bindings = <&kp DELETE>;
             key-positions = <21 22 23>;
-            timeout-ms = <85>;
+            timeout-ms = <150>;
             layers = <0 1 2 4 3>;
         };
 
@@ -378,7 +378,7 @@
         numbers {
             bindings = <
 &tap_currency  &trans     &trans        &kp POUND    &trans  &trans     &kp N7  &kp N8  &kp N9  &kp N0
-&trans         &kp MINUS  &kp PLUS      &kp EQUAL    &trans  &kp SLASH  &kp N4  &kp N5  &kp N6  &trans
+&trans         &kp MINUS  &kp PLUS      &kp EQUAL    &trans  &kp SLASH  &kp N4  &kp N5  &kp N6  &kp NUMBER_0
 &kp COMMA      &trans     &kp ASTERISK  &kp PERCENT  &trans  &kp COLON  &kp N1  &kp N2  &kp N3  &kp PERIOD
                           &trans        &trans       &trans  &trans     &trans  &trans
             >;
