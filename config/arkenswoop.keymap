@@ -360,7 +360,7 @@
             >;
 
             sensor-bindings =
-                <&inc_dec_mwh SCROLL_VERT(-200) SCROLL_VERT(200)>,
+                <&inc_dec_mwh SCROLL_VERT(-150) SCROLL_VERT(150)>,
                 <&inc_dec_kp LC(LS(R)) U>;
         };
 
