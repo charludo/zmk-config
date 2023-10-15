@@ -383,10 +383,10 @@
 
         navigation {
             bindings = <
-&kp LC(A)  &kp LA(LEFT)  &kp UP              &kp LA(RIGHT)  &none      &none   &kp LG(N7)  &kp LG(N8)     &kp LG(N9)  &kp LG(N0)
-&mo 4      &kp LEFT      &kp DOWN            &kp RIGHT      &kp LC(S)  &none   &kp LG(N4)  &kp LG(N5)     &kp LG(N6)  &kp LG(N0)
-&kp LC(D)  &kp LC(C)     &kp LC(X)           &kp LC(V)      &kp LC(T)  &none   &kp LG(N1)  &kp LG(N2)     &kp LG(N3)  &none
-                         &kp LA(LEFT)  &trans         &trans     &trans  &trans      &kp LA(RIGHT)
+&kp LC(A)  &kp LA(LEFT)  &kp UP     &kp LA(RIGHT)  &none      &none   &kp LG(N7)  &kp LG(N8)  &kp LG(N9)  &kp LG(N0)
+&mo 4      &kp LEFT      &kp DOWN   &kp RIGHT      &kp LC(S)  &none   &kp LG(N4)  &kp LG(N5)  &kp LG(N6)  &kp LG(N0)
+&kp LC(D)  &kp LC(C)     &kp LC(X)  &kp LC(V)      &kp LC(T)  &none   &kp LG(N1)  &kp LG(N2)  &kp LG(N3)  &none
+                         &kp LA(V)  &trans         &trans     &trans  &trans      &kp LA(L)
             >;
 
             sensor-bindings =
