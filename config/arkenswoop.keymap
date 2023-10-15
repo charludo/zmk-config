@@ -20,9 +20,7 @@
             compatible = "zmk,behavior-sensor-rotate-var";
             label = "ENC_MOUSE_WHEEL";
             #sensor-binding-cells = <2>;
-            bindings =
-                <&mwh>,
-                <&mwh>;
+            bindings = <&mwh>, <&mwh>;
         };
         num_word: behavior_num_word {
             compatible = "zmk,behavior-caps-word";
@@ -35,9 +33,7 @@
         num_activate: num_activate {
             compatible = "zmk,behavior-hold-tap";
             label = "NUM_ACTIVATE";
-            bindings =
-                <&mo>,
-                <&num_word>;
+            bindings = <&mo>, <&num_word>;
 
             #binding-cells = <2>;
             tapping-term-ms = <200>;
@@ -47,9 +43,7 @@
             compatible = "zmk,behavior-tap-dance";
             label = "TAP_CURRENCY";
             #binding-cells = <0>;
-            bindings =
-                <&kp DOLLAR>,
-                <&kp RA(NUMBER_5)>;
+            bindings = <&kp DOLLAR>, <&kp RA(NUMBER_5)>;
         };
         confirm_bt_reset: confirm_bt_reset {
             compatible = "zmk,behavior-tap-dance";
@@ -70,9 +64,7 @@
         mod_d_quotes: mod_d_quotes {
             compatible = "zmk,behavior-mod-morph";
             label = "MOD_D_QUOTES";
-            bindings =
-                <&real_d_quotes>,
-                <&kp DOUBLE_QUOTES>;
+            bindings = <&real_d_quotes>, <&kp DOUBLE_QUOTES>;
 
             #binding-cells = <0>;
             mods = <(MOD_LALT)>;
@@ -80,9 +72,7 @@
         mod_s_quote: mod_s_quote {
             compatible = "zmk,behavior-mod-morph";
             label = "MOD_S_QUOTE";
-            bindings =
-                <&real_s_quote>,
-                <&kp SINGLE_QUOTE>;
+            bindings = <&real_s_quote>, <&kp SINGLE_QUOTE>;
 
             #binding-cells = <0>;
             mods = <(MOD_LALT)>;
@@ -90,9 +80,7 @@
         mod_grave: mod_grave {
             compatible = "zmk,behavior-mod-morph";
             label = "MOD_GRAVE";
-            bindings =
-                <&real_grave>,
-                <&kp GRAVE>;
+            bindings = <&real_grave>, <&kp GRAVE>;
 
             #binding-cells = <0>;
             mods = <(MOD_LALT)>;
@@ -100,9 +88,7 @@
         mod_caret: mod_caret {
             compatible = "zmk,behavior-mod-morph";
             label = "MOD_CARET";
-            bindings =
-                <&real_caret>,
-                <&kp CARET>;
+            bindings = <&real_caret>, <&kp CARET>;
 
             #binding-cells = <0>;
             mods = <(MOD_LALT)>;
@@ -110,9 +96,7 @@
         mod_tilde: mod_tilde {
             compatible = "zmk,behavior-mod-morph";
             label = "MOD_TILDE";
-            bindings =
-                <&real_tilde>,
-                <&kp TILDE>;
+            bindings = <&real_tilde>, <&kp TILDE>;
 
             #binding-cells = <0>;
             mods = <(MOD_LALT)>;
@@ -120,9 +104,7 @@
         nav_activate: nav_activate {
             compatible = "zmk,behavior-hold-tap";
             label = "NAV_ACTIVATE";
-            bindings =
-                <&mo>,
-                <&kp>;
+            bindings = <&mo>, <&kp>;
 
             #binding-cells = <2>;
             tapping-term-ms = <200>;
@@ -130,9 +112,7 @@
         shift_activate: shift_activate {
             compatible = "zmk,behavior-hold-tap";
             label = "SHIFT_ACTIVATE";
-            bindings =
-                <&kp>,
-                <&caps_word>;
+            bindings = <&kp>, <&caps_word>;
 
             #binding-cells = <2>;
             tapping-term-ms = <200>;
@@ -140,9 +120,7 @@
         symbol_activate: symbol_activate {
             compatible = "zmk,behavior-hold-tap";
             label = "SYMBOL_ACTIVATE";
-            bindings =
-                <&mo>,
-                <&sl>;
+            bindings = <&mo>, <&sl>;
 
             #binding-cells = <2>;
             tapping-term-ms = <200>;
@@ -150,9 +128,7 @@
         mod_tilde_caret: mod_tilde_caret {
             compatible = "zmk,behavior-mod-morph";
             label = "MOD_TILDE_CARET";
-            bindings =
-                <&mod_tilde>,
-                <&mod_caret>;
+            bindings = <&mod_tilde>, <&mod_caret>;
 
             #binding-cells = <0>;
             mods = <(MOD_LSFT)>;
@@ -370,9 +346,7 @@
                   &none  &symbol_activate 2 2  &nav_activate 3 SPACE  &shift_activate LSHIFT 0  &num_activate 1 0  &none
             >;
 
-            sensor-bindings =
-                <&inc_dec_kp C D>,
-                <&inc_dec_kp A B>;
+            sensor-bindings = <&inc_dec_kp C D>, <&inc_dec_kp A B>;
         };
 
         numbers {
@@ -403,10 +377,10 @@
 
         navigation {
             bindings = <
-&kp LC(A)  &kp LA(LEFT)  &kp UP          &kp LA(RIGHT)  &none      &none   &kp N7  &kp N8      &kp N9  &kp N0
-&mo 4      &kp LEFT      &kp DOWN        &kp RIGHT      &kp LC(S)  &none   &kp N4  &kp N5      &kp N6  &none
-&kp LC(D)  &kp LC(C)     &kp LC(X)       &kp LC(V)      &kp LC(T)  &none   &kp N1  &kp N2      &kp N3  &none
-                         &kp K_PREVIOUS  &trans         &trans     &trans  &trans  &kp K_NEXT
+&kp LC(A)  &kp LA(LEFT)  &kp UP          &kp LA(RIGHT)  &none      &none   &kp LG(N7)  &kp LG(N8)  &kp LG(N9)  &kp LG(N0)
+&mo 4      &kp LEFT      &kp DOWN        &kp RIGHT      &kp LC(S)  &none   &kp LG(N4)  &kp LG(N5)  &kp LG(N6)  &kp LG(N0)
+&kp LC(D)  &kp LC(C)     &kp LC(X)       &kp LC(V)      &kp LC(T)  &none   &kp LG(N1)  &kp LG(N2)  &kp LG(N3)  &none
+                         &kp K_PREVIOUS  &trans         &trans     &trans  &trans      &kp K_NEXT
             >;
 
             sensor-bindings =
