@@ -346,7 +346,7 @@
                   &none  &symbol_activate 2 2  &nav_activate 3 SPACE  &shift_activate LSHIFT 0  &num_activate 1 0  &none
             >;
 
-            sensor-bindings = <&inc_dec_kp C D>, <&inc_dec_kp A B>;
+            sensor-bindings = <&inc_dec_kp C D>;
         };
 
         numbers {
@@ -357,10 +357,8 @@
                           &trans        &trans       &trans  &trans     &trans  &trans
             >;
 
-            sensor-bindings =
-                <&inc_dec_kp DOWN_ARROW UP_ARROW>,
-                <&inc_dec_kp RIGHT LEFT>;
-        };
+            sensor-bindings = <&inc_dec_kp DOWN_ARROW UP_ARROW>;
+        }; 
 
         symbols {
             bindings = <
@@ -370,9 +368,7 @@
                               &trans            &trans       &trans         &trans         &trans         &trans
             >;
 
-            sensor-bindings =
-                <&inc_dec_kp DOWN_ARROW UP_ARROW>,
-                <&inc_dec_kp RIGHT LEFT>;
+            sensor-bindings = <&inc_dec_kp DOWN_ARROW UP_ARROW>;
         };
 
         navigation {
@@ -383,9 +379,7 @@
                          &kp K_PREVIOUS  &trans         &trans     &trans  &trans      &kp K_NEXT
             >;
 
-            sensor-bindings =
-                <&inc_dec_kp DOWN_ARROW UP_ARROW>,
-                <&inc_dec_kp RIGHT LEFT>;
+            sensor-bindings = <&inc_dec_kp DOWN_ARROW UP_ARROW>;
         };
 
         function {
@@ -396,9 +390,7 @@
                          &kp K_MUTE  &none         &none              &none  &none   &none
             >;
 
-            sensor-bindings =
-                <&inc_dec_kp C_VOLUME_UP C_VOLUME_DOWN>,
-                <&inc_dec_kp LC(TAB) LS(LC(TAB))>;
+            sensor-bindings = <&inc_dec_kp C_VOLUME_UP C_VOLUME_DOWN>;
         };
     };
 };
