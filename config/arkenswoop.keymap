@@ -208,7 +208,7 @@
         combo_tab {
             bindings = <&kp TAB>;
             key-positions = <1 2 3>;
-            layers = <0 1 2 4 3>;
+            layers = <0 1 2 4>;
             timeout-ms = <85>;
         };
 
@@ -275,6 +275,13 @@
             bindings = <&kp PIPE>;
             key-positions = <15 16>;
             layers = <2>;
+        };
+
+        combo_shift_tab {
+            bindings = <&kp LS(TAB)>;
+            key-positions = <1 2 3>;
+            timeout-ms = <85>;
+            layers = <3>;
         };
     };
 
