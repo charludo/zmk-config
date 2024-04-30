@@ -19,8 +19,8 @@
         inc_dec_mwh: rotate_mouse_wheel {
             compatible = "zmk,behavior-sensor-rotate-var";
             label = "ENC_MOUSE_WHEEL";
-            sensor-binding-cells = <1>;
-            bindings = <&msc>, <&msc>;
+            #sensor-binding-cells = <2>;
+            bindings = <&kp &msc>, <&kp &msc>;
         };
 
         num_word: behavior_num_word {
