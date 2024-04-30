@@ -382,7 +382,7 @@
             >;
 
             sensor-bindings =
-                <&inc_dec_kp &msc SCRL_UP(100) &msc SCRL_DOWN(100)>,
+                <&inc_dec_kp SCRL_UP(100) SCRL_DOWN(100)>,
                 <&inc_dec_kp LC(LS(R)) U>;
         };
 
