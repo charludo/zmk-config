@@ -19,7 +19,7 @@
         inc_dec_mwh: rotate_mouse_wheel {
             compatible = "zmk,behavior-sensor-rotate-var";
             label = "ENC_MOUSE_WHEEL";
-            #sensor-binding-cells = <1>;
+            #sensor-binding-cells = <0>;
             bindings = <&msc>, <&msc>;
         };
 
