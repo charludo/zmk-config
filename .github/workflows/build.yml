@@ -3,4 +3,4 @@ on: [push, pull_request, workflow_dispatch]
 jobs:
   build:
     if: github.ref == 'refs/heads/main'
-    uses: zmkfirmware/zmk/.github/workflows/build-user-config.yml@275c0ce271ad3cdff6d1ddf4f7daef50754f33da
+    uses: zmkfirmware/zmk/.github/workflows/build-user-config.yml@96f9031951f4edc3477b523e5cc33bafe8017482
