@@ -20,7 +20,7 @@
             compatible = "zmk,behavior-sensor-rotate-var";
             label = "ENC_MOUSE_WHEEL";
             #sensor-binding-cells = <2>;
-            bindings = <&kp &msc>, <&kp &msc>;
+            bindings = <&msc>, <&msc>;
         };
 
         num_word: behavior_num_word {
@@ -382,7 +382,7 @@
             >;
 
             sensor-bindings =
-                <&inc_dec_mwh SCRL_UP(100) SCRL_DOWN(100)>,
+                <&inc_dec_mwh &kp SCRL_UP(100)  &kp SCRL_DOWN(100)>,
                 <&inc_dec_kp LC(LS(R)) U>;
         };
 
