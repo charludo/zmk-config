@@ -50,17 +50,7 @@
         confirm_bt_reset: confirm_bt_reset {
             compatible = "zmk,behavior-tap-dance";
             #binding-cells = <0>;
-            bindings =
-                <&none>,
-                <&none>,
-                <&none>,
-                <&none>,
-                <&none>,
-                <&none>,
-                <&none>,
-                <&none>,
-                <&none>,
-                <&bt BT_CLR>;
+            bindings = <&none>, <&none>, <&none>, <&none>, <&bt BT_CLR_ALL>;
         };
 
         mod_d_quotes: mod_d_quotes {
