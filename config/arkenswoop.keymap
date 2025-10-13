@@ -3,7 +3,6 @@
  *
  * SPDX-License-Identifier: MIT
  */
-
 // #define ZMK_POINTING_DEFAULT_MOVE_VAL 600
 // #define ZMK_POINTING_DEFAULT_SCRL_VAL 10
 
@@ -255,7 +254,7 @@
 
         combo_s_quote {
             bindings = <&real_s_quote>;
-            key-positions = <4 14>;
+            key-positions = <14 24>;
             layers = <0>;
         };
 
@@ -284,6 +283,24 @@
             key-positions = <1 2 3>;
             timeout-ms = <85>;
             layers = <3>;
+        };
+
+        combo_questionmark_bottom {
+            bindings = <&kp QUESTION>;
+            key-positions = <19 29>;
+            layers = <0>;
+        };
+
+        combo_exclamationmark_bottom {
+            bindings = <&kp EXCLAMATION>;
+            key-positions = <10 20>;
+            layers = <0>;
+        };
+
+        combo_grave {
+            bindings = <&real_grave>;
+            key-positions = <14 4>;
+            layers = <0>;
         };
     };
 
@@ -360,9 +377,7 @@
                   &nvim_top  &symbol_activate 2 2  &nav_activate 3 SPACE  &shift_activate LSHIFT 0  &num_activate 1 0  &kp LS(G)
             >;
 
-            sensor-bindings =
-                <&scroll_up_down>,
-                <&inc_dec_kp LC(LS(R)) U>;
+            sensor-bindings = <&scroll_up_down>, <&inc_dec_kp LC(LS(R)) U>;
         };
 
         numbers {
